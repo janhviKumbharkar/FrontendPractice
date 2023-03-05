@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="fname">Firstname: </div>
+  <div id="lname">lastname: </div>
+  <div id="mail">Email: </div>
+  <div id="pass">Password: </div>
+  <div id="role">Job Role: </div>
+  <div id="gender">Gender: </div>
+  <div id="num">NUmber: </div>
+  <div id="add">Address: </div>
+
+
+</body>
+<script>
+
+document.getElementById("fname").innerText=localStorage.getItem("fname")
+document.getElementById("lname").innerText=localStorage.getItem("lname")
+document.getElementById("mail").innerText=localStorage.getItem("mail")
+document.getElementById("pass").innerText=localStorage.getItem("pass")
+document.getElementById("role").innerText=localStorage.getItem("role")
+document.getElementById("gender").innerText=localStorage.getItem("gender")
+document.getElementById("num").innerText=localStorage.getItem("num")
+document.getElementById("add").innerText=localStorage.getItem("add")
+
+
+</script>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="enter name" />
+      </div>
+      <br />
+      <div>
+        <label for="lname">Last Name:</label>
+        <input
+          type="text"
+          name="lname"
+          id="lname"
+          placeholder="enter surname"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="mail">Email:</label>
+        <input type="email" name="mail" id="mail" placeholder="enter mail" />
+      </div>
+      <br />
+      <div>
+        <label for="pass">Password:</label>
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="enter password"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="role">Job Role:</label>
+        <select name="Job Role" id="role">
+          <option value="Select Job Role">Select Job Role</option>
+          <option value="Backend Developer">Backend Developer</option>
+          <option value="Frontend Developer">Frontend Developer</option>
+          <option value="Full Stack Developer">Full Stack Developer</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        Gender : 
+        <label for="male" id="gender">Male:</label>
+        <input type="radio" name="Male" id="male" />
+        <label for="female">Female:</label>
+        <input type="radio" name="female" id="female" />
+      </div>
+      <br>
+      <div>
+        Mobile No : 
+        <input type="number" name="num" id="num" >
+      </div>
+      <br>
+      <div>
+      DOB : 
+      <input type="date" name="date" id="date">
+      </div>
+      <br>
+      <div>
+        Address : 
+        <textarea name="address" id="add" cols="100" rows="5"></textarea>
+      </div>
+      <br>
+      <button type="button" onclick="saveData()">Submit</button>
+      <a href="details.html">Details</a>
+
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
